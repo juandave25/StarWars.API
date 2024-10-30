@@ -19,7 +19,7 @@ namespace StarWars.API.Services
         private readonly IMemoryCache _cache;
         private readonly CacheSettings _cacheSettings;
         private readonly ILogger<StarwarsApiService> _logger;
-        private const string BaseUrl = "https://swapi.dev/api";
+        private const string BaseUrl = "https://swapi.dev";
         private const string StarshipsCacheKey = "starships";
         private const string ManufacturersCacheKey = "manufacturers";
 
@@ -46,7 +46,7 @@ namespace StarWars.API.Services
             try
             {
                 var starships = new List<StarshipResponse>();
-                string? nextUrl = "/starships/";
+                string? nextUrl = "/api/starships/";
 
                 while (!string.IsNullOrEmpty(nextUrl))
                 {

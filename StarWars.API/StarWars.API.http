@@ -1,6 +1,19 @@
 @StarWars.API_HostAddress = http://localhost:5283
+#Docs: https://learn.microsoft.com/en-us/aspnet/core/test/http-files?view=aspnetcore-8.0
 
-GET {{StarWars.API_HostAddress}}/weatherforecast/
+GET {{StarWars.API_HostAddress}}/api/starships
 Accept: application/json
 
+###
+GET {{StarWars.API_HostAddress}}/api/starships/manufacturers
+Accept: application/json
+###
+
+POST {{StarWars.API_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "demo",
+    "password": "demo123"
+}
 ###

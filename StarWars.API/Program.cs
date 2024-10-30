@@ -14,6 +14,7 @@ builder.Services.Configure<CacheSettings>(builder.Configuration.GetSection("Cach
 
 builder.Services.AddMemoryCache();
 builder.Services.AddHttpClient<IStarwarsApiService, StarwarsApiService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<AuthService>();
 
 // Configure authentication
