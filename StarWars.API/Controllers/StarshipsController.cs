@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using StarWars.API.Entity.Dto;
 using StarWars.API.Services;
@@ -20,6 +21,7 @@ namespace StarWars.API.Controllers
             _logger = logger;
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<StarshipResponse>>> GetStarships(
             [FromQuery] string? manufacturer = null)
@@ -43,6 +45,7 @@ namespace StarWars.API.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("manufacturers")]
         public async Task<ActionResult<IEnumerable<string>>> GetManufacturers()
         {

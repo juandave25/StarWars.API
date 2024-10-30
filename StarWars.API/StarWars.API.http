@@ -1,14 +1,6 @@
 @StarWars.API_HostAddress = http://localhost:5283
 #Docs: https://learn.microsoft.com/en-us/aspnet/core/test/http-files?view=aspnetcore-8.0
 
-GET {{StarWars.API_HostAddress}}/api/starships
-Accept: application/json
-
-###
-GET {{StarWars.API_HostAddress}}/api/starships/manufacturers
-Accept: application/json
-###
-
 POST {{StarWars.API_HostAddress}}/api/auth/login
 Content-Type: application/json
 
@@ -16,4 +8,13 @@ Content-Type: application/json
     "username": "demo",
     "password": "demo123"
 }
+###
+GET {{StarWars.API_HostAddress}}/api/starships
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiZGVtbyIsImV4cCI6MTczMDI2MDY0OSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwMSIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6MzAwMCJ9.sOSfVhB7PBzXNWQw1p18DUyy5xtD3u3agO4XDPLf0eo
+
+###
+GET {{StarWars.API_HostAddress}}/api/starships/manufacturers
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiZGVtbyIsImV4cCI6MTczMDI2MDY0OSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NzAwMSIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6MzAwMCJ9.sOSfVhB7PBzXNWQw1p18DUyy5xtD3u3agO4XDPLf0eo
 ###
