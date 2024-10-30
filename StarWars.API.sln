@@ -5,6 +5,10 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWars.API", "StarWars.API\StarWars.API.csproj", "{6CB420B9-A339-4532-AB89-25BF8636EA1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWars.API.Services", "StarWars.API.Services\StarWars.API.Services.csproj", "{F930ED4D-0646-4D7C-B1C4-4ACECE531E59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWars.API.Entity", "StarWars.API.Entity\StarWars.API.Entity.csproj", "{F19FAD39-1F55-446D-89F8-00962E4A5075}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{6CB420B9-A339-4532-AB89-25BF8636EA1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CB420B9-A339-4532-AB89-25BF8636EA1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CB420B9-A339-4532-AB89-25BF8636EA1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F930ED4D-0646-4D7C-B1C4-4ACECE531E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F930ED4D-0646-4D7C-B1C4-4ACECE531E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F930ED4D-0646-4D7C-B1C4-4ACECE531E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F930ED4D-0646-4D7C-B1C4-4ACECE531E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F19FAD39-1F55-446D-89F8-00962E4A5075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F19FAD39-1F55-446D-89F8-00962E4A5075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F19FAD39-1F55-446D-89F8-00962E4A5075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F19FAD39-1F55-446D-89F8-00962E4A5075}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

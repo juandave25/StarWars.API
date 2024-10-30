@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using StarWars.API.Entity.Configuration;
+using StarWars.API;
 using System.Text;
+using StarWars.API.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<CacheSettings>(builder.Configuration.GetSection("CacheSettings"));
 
 builder.Services.AddMemoryCache();
-builder.Services.AddHttpClient<ISwapiService, SwapiService>();
+builder.Services.AddHttpClient<IStarwarsApiService, StarwarsApiService>();
 builder.Services.AddScoped<AuthService>();
 
 // Configure authentication
